@@ -16,7 +16,7 @@ permissions:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build-deblocker:
+  build-rateit:
     runs-on: ubuntu-latest
     steps:
       # Get the repositery's code
@@ -41,12 +41,12 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Docker meta
-        id: meta_deblocker
+        id: meta_rateit
         uses: docker/metadata-action@v4
         with:
           # list of Docker images to use as base name for tags
           images: |
-            ghcr.io/buglloc/deblocker
+            ghcr.io/buglloc/rateit
           # generate Docker tags based on the following events/attributes
           tags: |
             type=schedule
@@ -62,5 +62,5 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64/v8
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta_deblocker.outputs.tags }}
-          labels: ${{ steps.meta_deblocker.outputs.labels }}
+          tags: ${{ steps.meta_rateit.outputs.tags }}
+          labels: ${{ steps.meta_rateit.outputs.labels }}
