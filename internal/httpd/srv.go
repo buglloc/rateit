@@ -6,6 +6,7 @@ import (
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	"github.com/rs/zerolog/log"
 
@@ -43,7 +44,10 @@ func NewServer(cfg *config.Config) (*Server, error) {
 			return nil
 		},
 	})
-	app.Use(recover.New())
+	app.Use(
+		recover.New(),
+		logger.New(),
+	)
 
 	providers := make(map[string]provider.Provider, len(cfg.Providers))
 	for _, p := range cfg.Providers {
