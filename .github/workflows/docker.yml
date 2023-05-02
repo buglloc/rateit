@@ -6,11 +6,11 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - main
     tags:
       - 'v*.*.*'
 
-permissions: 
+permissions:
   contents: read
   packages: write
 
@@ -22,7 +22,7 @@ jobs:
       # Get the repositery's code
       - name: Checkout
         uses: actions/checkout@v3
-      
+
       # https://github.com/docker/setup-qemu-action
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
