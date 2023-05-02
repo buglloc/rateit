@@ -37,6 +37,7 @@ func init() {
 
 	rootCmd.AddCommand(
 		startCmd,
+		watchCmd,
 	)
 }
 
