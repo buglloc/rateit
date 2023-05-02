@@ -1,0 +1,23 @@
+debug: false
+addr: "127.0.0.1:3000"
+providers:
+  - kind: contact
+    route: contact/ru-th
+    contact:
+      debug: false
+      amount: 1400.00
+      country: THAILAND
+      bank: LGJX
+  - kind: korona
+    route: korona/ru-th
+    korona:
+      debug: false
+      amount: 1400.00
+      sender:
+        country: RUS
+        currency: 810
+      receiver:
+        country: THA
+        currency: 840
+      paymentMethod: debitCard
+      receivingMethod: accountViaDeeMoney
