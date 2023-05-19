@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/buglloc/certifi v0.9.0
 	github.com/go-resty/resty/v2 v2.7.0
-	github.com/gofiber/fiber/v2 v2.45.0
+	github.com/gofiber/fiber/v2 v2.46.0
 	github.com/jaswdr/faker v1.17.0
 	github.com/refraction-networking/utls v1.3.2
 	github.com/rs/zerolog v1.29.1
