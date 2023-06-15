@@ -58,6 +58,7 @@ var watchCmd = &cobra.Command{
 				rate     float64
 			}
 
+			now := time.Now()
 			var syncErr error
 			rates := make([]rateInfo, 0, len(providers))
 			for _, p := range providers {
@@ -77,7 +78,7 @@ var watchCmd = &cobra.Command{
 			}
 
 			var out strings.Builder
-			out.WriteString(time.Now().Format(time.RFC822))
+			out.WriteString(now.Format(time.RFC822))
 			out.WriteString("\t")
 			for i, r := range rates {
 				if i != 0 {
