@@ -75,8 +75,8 @@ var watchCmd = &cobra.Command{
 						Get("/api/v1/rate/" + p.route)
 					if err != nil {
 						log.Error().Err(err).Str("provider", p.provider).Msg("sync failed")
-						continue
 					}
+
 					rates = append(rates, rateInfo{
 						provider: p.provider,
 						rate:     rsp.Rate,
