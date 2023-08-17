@@ -34,8 +34,8 @@ jobs:
         platform:
           - ubuntu
         go:
-          - 19
           - 20
+          - 21
     name: 'tests on ${{ matrix.platform }} | 1.${{ matrix.go }}.x'
     runs-on: ${{ matrix.platform }}-latest
     steps:
