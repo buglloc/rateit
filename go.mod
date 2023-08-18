@@ -7,7 +7,7 @@ require (
 	github.com/cenkalti/backoff/v4 v4.2.1
 	github.com/go-resty/resty/v2 v2.7.0
 	github.com/gofiber/fiber/v2 v2.48.0
-	github.com/jaswdr/faker v1.18.1
+	github.com/jaswdr/faker v1.19.0
 	github.com/refraction-networking/utls v1.4.3
 	github.com/rs/zerolog v1.30.0
 	github.com/spf13/cobra v1.7.0
