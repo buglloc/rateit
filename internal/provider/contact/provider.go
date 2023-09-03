@@ -76,14 +76,6 @@ func (p *Provider) CurrentRate(ctx context.Context) (float64, error) {
 		return 0, fmt.Errorf("unable to fill transfer details: %w", err)
 	}
 
-	err = sess.FillTransferParticipants(ctx, tr, &contactsys.TransferParticipants{
-		TransferSender:    contactsys.RandomTransferSender(),
-		TransferRecipient: contactsys.RandomTransferRecipient(country, bank),
-	})
-	if err != nil {
-		return 0, fmt.Errorf("unable to fill transfer practicans: %w", err)
-	}
-
 	rate, err := sess.TransferRate(ctx, tr)
 	if err != nil {
 		return 0, fmt.Errorf("unable to get transfer rate: %w", err)
