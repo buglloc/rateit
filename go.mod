@@ -7,7 +7,7 @@ toolchain go1.21.0
 require (
 	github.com/buglloc/certifi v0.9.1
 	github.com/cenkalti/backoff/v4 v4.2.1
-	github.com/go-resty/resty/v2 v2.7.0
+	github.com/go-resty/resty/v2 v2.8.0
 	github.com/gofiber/fiber/v2 v2.49.1
 	github.com/jaswdr/faker v1.19.0
 	github.com/refraction-networking/utls v1.5.3
