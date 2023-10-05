@@ -32,7 +32,7 @@ func NewClient(opts ...Option) (*Client, error) {
 			SetRetryCount(DefaultRetries).
 			SetTimeout(DefaultTimeout).
 			SetHeader("X-Application", "Qpay-Web/3.0").
-			SetHeader("Accept", "application/vnd.cft-data.v2.99+json"),
+			SetHeader("Accept", "application/vnd.cft-data.v2.112+json"),
 	}
 
 	defaultOpts := []Option{
@@ -61,6 +61,7 @@ func (c *Client) Tariff(ctx context.Context, req *TariffReq) (float64, error) {
 		SetContext(ctx).
 		SetError(&remoteErr).
 		SetResult(&rsp).
+		ForceContentType("application/json").
 		SetQueryParams(map[string]string{
 			"sendingCountryId":        req.Sender.Country.String(),
 			"sendingCurrencyId":       req.Sender.Currency.String(),
