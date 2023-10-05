@@ -54,7 +54,7 @@ func RandomTransferSender() *TransferSender {
 	fake := faker.New()
 	person := fake.Person()
 	return &TransferSender{
-		Name:       safeName(person.NameMale()),
+		Name:       safeName(person.FirstNameMale()),
 		LastName:   safeName(person.LastName()),
 		BirthPlace: "USSR",
 		Country:    "RU",
@@ -91,7 +91,7 @@ func RandomTransferRecipient(country Country, bank Bank) *TransferRecipient {
 	person := fake.Person()
 	address := fake.Address()
 	return &TransferRecipient{
-		Name:     safeName(person.NameFemale()),
+		Name:     safeName(person.FirstNameFemale()),
 		LastName: safeName(person.LastName()),
 		Country:  country.Code,
 		City:     bank.Address,
