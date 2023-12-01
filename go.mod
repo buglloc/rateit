@@ -5,7 +5,7 @@ go 1.21
 toolchain go1.21.0
 
 require (
-	github.com/buglloc/certifi v0.9.1
+	github.com/buglloc/certifi v0.9.2
 	github.com/cenkalti/backoff/v4 v4.2.1
 	github.com/go-resty/resty/v2 v2.10.0
 	github.com/gofiber/fiber/v2 v2.51.0
