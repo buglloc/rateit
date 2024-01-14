@@ -10,7 +10,7 @@ require (
 	github.com/go-resty/resty/v2 v2.11.0
 	github.com/gofiber/fiber/v2 v2.52.0
 	github.com/jaswdr/faker v1.19.1
-	github.com/refraction-networking/utls v1.6.0
+	github.com/refraction-networking/utls v1.6.1
 	github.com/rs/zerolog v1.31.0
 	github.com/spf13/cobra v1.8.0
 	go.uber.org/automaxprocs v1.5.3
@@ -20,7 +20,7 @@ require (
 
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
-	github.com/cloudflare/circl v1.3.6 // indirect
+	github.com/cloudflare/circl v1.3.7 // indirect
 	github.com/google/uuid v1.5.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/klauspost/compress v1.17.0 // indirect
