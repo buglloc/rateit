@@ -8,7 +8,7 @@ require (
 	github.com/buglloc/certifi v0.9.2
 	github.com/cenkalti/backoff/v4 v4.2.1
 	github.com/go-resty/resty/v2 v2.12.0
-	github.com/gofiber/fiber/v2 v2.52.2
+	github.com/gofiber/fiber/v2 v2.52.3
 	github.com/jaswdr/faker v1.19.1
 	github.com/refraction-networking/utls v1.6.3
 	github.com/rs/zerolog v1.32.0
