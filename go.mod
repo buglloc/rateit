@@ -10,7 +10,7 @@ require (
 	github.com/go-resty/resty/v2 v2.12.0
 	github.com/gofiber/fiber/v2 v2.52.4
 	github.com/jaswdr/faker v1.19.1
-	github.com/refraction-networking/utls v1.6.3
+	github.com/refraction-networking/utls v1.6.4
 	github.com/rs/zerolog v1.32.0
 	github.com/spf13/cobra v1.8.0
 	go.uber.org/automaxprocs v1.5.3
@@ -28,7 +28,6 @@ require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
-	github.com/quic-go/quic-go v0.40.1 // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
