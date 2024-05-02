@@ -10,11 +10,11 @@ require (
 	github.com/go-resty/resty/v2 v2.12.0
 	github.com/gofiber/fiber/v2 v2.52.4
 	github.com/jaswdr/faker v1.19.1
-	github.com/refraction-networking/utls v1.6.4
+	github.com/refraction-networking/utls v1.6.5
 	github.com/rs/zerolog v1.32.0
 	github.com/spf13/cobra v1.8.0
 	go.uber.org/automaxprocs v1.5.3
-	golang.org/x/net v0.22.0
+	golang.org/x/net v0.23.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
