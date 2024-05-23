@@ -11,7 +11,7 @@ require (
 	github.com/gofiber/fiber/v2 v2.52.4
 	github.com/jaswdr/faker v1.19.1
 	github.com/refraction-networking/utls v1.6.6
-	github.com/rs/zerolog v1.32.0
+	github.com/rs/zerolog v1.33.0
 	github.com/spf13/cobra v1.8.0
 	go.uber.org/automaxprocs v1.5.3
 	golang.org/x/net v0.25.0
