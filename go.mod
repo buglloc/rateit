@@ -12,7 +12,7 @@ require (
 	github.com/jaswdr/faker v1.19.1
 	github.com/refraction-networking/utls v1.6.6
 	github.com/rs/zerolog v1.33.0
-	github.com/spf13/cobra v1.8.0
+	github.com/spf13/cobra v1.8.1
 	go.uber.org/automaxprocs v1.5.3
 	golang.org/x/net v0.26.0
 	gopkg.in/yaml.v3 v3.0.1
