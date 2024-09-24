@@ -13,7 +13,7 @@ require (
 	github.com/refraction-networking/utls v1.6.7
 	github.com/rs/zerolog v1.33.0
 	github.com/spf13/cobra v1.8.1
-	go.uber.org/automaxprocs v1.5.3
+	go.uber.org/automaxprocs v1.6.0
 	golang.org/x/net v0.29.0
 	gopkg.in/yaml.v3 v3.0.1
 )
